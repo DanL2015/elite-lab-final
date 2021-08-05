@@ -1,7 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'chatroom-base.html' %}
 
 {% block styles %}
 <link type="text/css" rel="stylesheet" href="/static/css/chat.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 {% endblock %}
 
 {% block scripts %}
@@ -18,15 +21,16 @@
       <h2 class="chat-title">{{chatroom_name}}</h2>
     </div>
   </div>
+  <div style="border: 5px solid #88c0d0; border-radius: 20px;">
   <div class="row">
     <div class="col">
-      <div id="chat-window">
+      <div id="chat-window" style="overflow: hidden; margin: 10px;">
         <ul id="message-list" class="container">
         </ul>
       </div>
     </div>
   </div>
-  <div class="row" style="margin-top: 10px;">
+  <div class="row" style="margin: 10px;">
     <div class="col">
       <form class="input-group mb-3" id="message-input">
         <input type="text" class="form-control" placeholder="">
@@ -36,12 +40,13 @@
       </form>
     </div>
   </div>
+  </div>
 
   <div class="row" style="margin-top: 10px;">
     <div class="col">
       <div class="row" id="share-row">
         <div class="col">
-          <button class="btn btn-secondary align-top" id="start-share-button">Get Invite Link</button>
+          <button class="btn btn-secondary align-top" id="start-share-button" style="text-align: center">Get Invite Link</button>
         </div>
       </div>
       <div class="row" id="expanded-share-row" style="display: none;">

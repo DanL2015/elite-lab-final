@@ -1,7 +1,28 @@
 /**
  * @file
- * Index page stylesheet file.
+ * Main stylesheet file.
  */
+
+/* -------- General Style -------- */
+#content {
+  /* background: #FEFEFE; */
+  z-index: -10;
+}
+
+.mask-bg {
+  background: #eceff4;
+  z-index: 1;
+}
+
+.text-pad {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.mobile-pad {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 /* -------- Index Style -------- */
 .hero-section {
@@ -24,6 +45,10 @@
   font-size: 1.5rem;
 }
 
+img.parallax-slider {
+  filter: blur(3px);
+}
+
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -32,14 +57,14 @@
 
   text-align: center;
 
-  color: #8b8b8b;
+  color: #4c566a;
 }
 
 .hero-under-banner {
-  background-color: #f7f7f7;
+  background-color: #e5e9f0;
 
   text-align: center;
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 10px;
   line-height: 18px;
   font-weight: 400;
@@ -58,29 +83,27 @@
 .blurb-section {
   margin-top: 50px;
   margin-bottom: 100px;
-
   text-align: center;
-  font-family: Montserrat,
-    sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 2px;
 }
 
 .blurb-section p {
+  line-height: 18px;
   margin-top: 5px;
   margin-bottom: 10px;
+  color: #2e3440;
 }
 
 .section-header {
-  font-family: Oswald, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 22px;
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 5px;
-
-  margin-bottom: 10px;
 }
 
 .section-content {
@@ -88,9 +111,8 @@
 }
 
 .section-content-header {
-  font-family: Oswald,
-    sans-serif;
-  color: #353538;
+  font-family: Roboto, sans-serif;
+  color: #4c566a;
   font-size: 18px;
   line-height: 20px;
   font-style: normal;
@@ -101,7 +123,7 @@
 .time-span {
   margin-top: 3px;
 
-  color: #8b8b8b;
+  color: #5e81ac;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -111,8 +133,7 @@
 .section-content-inner {
   margin-top: 10px;
 
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -124,6 +145,7 @@
 
 .section-content-inner ul .main-li {
   margin-top: 8px;
+  list-style-type: none;
 }
 
 .section-content-inner ul .sub-li {
@@ -150,13 +172,19 @@
 
 /* Above med breakpoint */
 @media (min-width: 768px) {
-
   /* Add your desktop CSS here */
   .section-header {
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 5px;
+    background-color: #e5e9f0;
+    padding: 1%;
+    border-radius: 10px;
+    text-decoration: underline;
+    text-decoration-color: #88c0d0;
+    text-decoration-thickness: 2px;
+    margin-bottom: 10px;
   }
 
   .section-content-header {
@@ -190,7 +218,6 @@
   }
 }
 
-
 /* -------- Footer Style -------- */
 
 .footer-container {
@@ -198,22 +225,22 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  background-color: #f7f7f7;
+  background-color: #e5e9f0;
 }
 
 .contact-me-text {
-  font-family: Oswald, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 22px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 5px;
+  color: #2e3440;
 }
 
 .contact-icons div {
   margin-top: 10px;
 
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .contact-icons img {
@@ -222,5 +249,5 @@
 
 .contact-info {
   margin-left: 15px;
-  color: #000000 !important;
+  color: #2e3440 !important;
 }

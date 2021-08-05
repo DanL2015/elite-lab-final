@@ -11,7 +11,8 @@ class Message(db.Model):
     content = db.Column(db.String(256))
 
     # Foreign Key
-    chat_id = db.Column(db.Integer, db.ForeignKey('chat.id'), nullable=False, index=True)
+    chat_id = db.Column(db.Integer, db.ForeignKey(
+        'chat.id'), nullable=False, index=True)
 
     def __repr__(self):
         return '<Message {} from {}'.format(self.id, self.chat_id)
@@ -95,7 +96,8 @@ class Chat(db.Model):
 
     # Fill in your model here
     id = db.Column(db.Integer, primary_key=True)
-
+    name = db.Column(db.String(64))
+    hash_key = db.Column(db.String(10), index=True)
     # This represents the other side of the many-to-one relationship
     # This is not defined in the database, so don't worry about this
     messages = db.relationship('Message', backref='message', lazy='dynamic')
@@ -139,5 +141,6 @@ class ChatManager:
         message with last_id was created
         """
         chat = Chat.query.get(chat_id)
-        messages = chat.messages.filter(Message.id > last_id).order_by(Message.timestamp.asc())
+        messages = chat.messages.filter(
+            Message.id > last_id).order_by(Message.timestamp.asc())
         return messages

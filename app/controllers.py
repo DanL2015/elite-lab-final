@@ -44,7 +44,7 @@ def chat_page(chat_hash):
     Chat page
     """
     chat = ChatManager.get_chat_from_hash(chat_hash)
-    data = { 'id': chat.id }
+    data = {'id': chat.id}
     if chat:
         return render_template('chatroom.html', chatroom_name=chat.name, data=data, title="Chatroom")
     else:

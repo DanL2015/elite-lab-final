@@ -11,6 +11,9 @@
 {% block styles %}
 <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/image-overlay.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 {% endblock %}
 
 {% block content %}
@@ -18,11 +21,11 @@
 <div class="row">
   <div class="col hero-section justify-content-center align-items-middle">
     <div class="hero-section" style="background: none;">
-      <div class="parallax-window" data-parallax="scroll" data-image-src="/static/img/splash.jpg" style="height: 100%;"
+      <div class="parallax-window" data-parallax="scroll" data-image-src="/static/img/Nordic.jpeg" style="height: 100%;"
         data-z-index="-1">
       </div>
       <div class="text-overlay">
-        <h1>I Build Stuff.</h1>
+        <h1><span style="color: #2e3440;background-color: #eceff4; padding: 1%; border-radius: 25px; text-decoration: underline; text-decoration-color: #88c0d0; text-decoration-thickness: 2px"> Welcome to My Website. </span></h1>
       </div>
     </div>
   </div>
@@ -33,13 +36,13 @@
       <div class="container" style="max-width: 800px;">
         <div class="row align-items-center mobile-pad" style="min-height: 40px;">
           <div class="col-sm-4 text-pad">
-            My Name
+            <span style="color: #2e3440; text-decoration:underline; text-decoration-color: #88c0d0">Daniel Liu</span>
           </div>
           <div class="col-sm-4 text-pad">
-            me@gmail.com
+            <span style="color: #2e3440; text-decoration:underline; text-decoration-color: #88c0d0"><a href="mailto: daniel17liu@gmail.com">daniel17liu@gmail.com</a></span>
           </div>
           <div class="col-sm-4 text-pad">
-            Los Angeles, CA
+            <span style="color: #2e3440; text-decoration:underline; text-decoration-color: #88c0d0">Union City, CA</span>
           </div>
         </div>
       </div>
@@ -47,11 +50,14 @@
   </div>
   <div class="container page-content-container" style="margin-top: 40px;">
     <div class="row">
-      <div class="col blurb-section">
-        <p>I'm a student passionate about xyz</p>
+      <div class="col-sm-6 blurb-section">
+        <p>I'm a student passionate about computer science</p>
         <p>creating stuff that is potentially interesting to you.</p>
-        <p>Intrigued by design, sports, photography, coding, and always learning more.</p>
-        <p>Check out what I've done.</p>
+        <p>Interested in website and software development.</p>
+        <p style="text-decoration: underline; text-decoration-color:#88c0d0; text-decoration-thickness: 2px; font-size: medium">Thanks for visiting my page!</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="/static/img/picture.jpg" style="width:50%; height:auto; border: 5px solid #88c0d0; border-radius: 10%;">
       </div>
     </div>
   </div>
@@ -66,27 +72,23 @@
     <div class="row">
       <div class="col">
 
-        <!-- Project 1 -->
+        <!-- Project 2 -->
         <div class="container section-content">
           <div class="row">
             <div class="col section-content-header">
-              Project 1
+              JLHS Computer Science Club
             </div>
           </div>
           <div class="row">
             <div class="col time-span">
-              Aug 2020 - Present
+              Aug 2018 - Present
             </div>
           </div>
           <div class="row">
             <div class="col section-content-inner">
-              <p>Here is what I did for this project</p>
-              <p>Here are some action steps I took</p>
               <ul>
-                <li class="main-li">I planned this out</li>
-                <li class="sub-li">Step 1</li>
-                <li class="sub-li">Step 2</li>
-                <li class="main-li">I executed this</li>
+                <li class="main-li">President of James Logan High School Computer Science Club since 2020</li>
+                <li class="main-li">Focusing on solving and practicing competitive programming problems</li>
               </ul>
             </div>
           </div>
@@ -96,23 +98,48 @@
         <div class="container section-content">
           <div class="row">
             <div class="col section-content-header">
-              Project 2
+              JLHS Technology Empowering Leaders Club
             </div>
           </div>
           <div class="row">
             <div class="col time-span">
-              Aug 2019 - Jan 2020
+              Aug 2020 - Present
             </div>
           </div>
           <div class="row">
             <div class="col section-content-inner">
-              <p>Here is what I did for this project</p>
-              <p>Here are some action steps I took</p>
               <ul>
-                <li class="main-li">I planned this out</li>
-                <li class="sub-li">Step 1</li>
-                <li class="sub-li">Step 2</li>
-                <li class="main-li">I executed this</li>
+                <li class="main-li">Director of Events for the James Logan High School Technology Empowering Leaders Club since 2020</li>
+                <li class="main-li">Focusing on introducing young middle school students to programming</li>
+                <li class="main-li">Cohost of Learntech Webinar</li>
+                <li class="main-li">Speakers:</li>
+                <li class="sub-li">Ahmed Elsamadisi - Founder at Narrator.ai, Forbes 30 under 30</li>
+                <li class="sub-li">Darien Schettler - Senior Machine Learning Engineer & Principal Applied Researcher at Quantiphi</li>
+                <li class="sub-li">Sankaet Pathak - CEO at Synapse</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="container section-content">
+          <div class="row">
+            <div class="col section-content-header">
+              JLHS Swim Team
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span">
+              Aug 2018 - Present
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-inner">
+              <ul>
+                <li class="main-li">Swimmer for the James Logan High School Swim Team</li>
+                <li class="main-li">2019 Junior Varsity MVP</li>
+                <li class="main-li">Junior Varsity top 5 100 I.M. record</li>
+                <li class="main-li">Varsity swimmer since 2020</li>
               </ul>
             </div>
           </div>
@@ -137,75 +164,66 @@
         <div class="container section-content">
           <div class="row">
             <div class="col section-content-header">
-              Project 1
+              Eagle Project
             </div>
           </div>
           <div class="row">
             <div class="col time-span">
-              Aug 2020 - Present
+              Aug 2018 - Aug 2019
             </div>
           </div>
           <div class="row">
             <div class="col section-content-inner">
-              <p>Here is what I did for this project</p>
-              <p>Here are some action steps I took</p>
+              <p>Replaced the grass lawn in front of the Union City Public Works Center with a drought resistant garden</p>
               <ul>
-                <li class="main-li">I planned this out</li>
-                <li class="sub-li">Step 1</li>
-                <li class="sub-li">Step 2</li>
-                <li class="main-li">I executed this</li>
+                <li class="main-li">Installed drip irrigation system</li>
+                <li class="main-li">Led over 40 volunteers</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Project 1 -->
+        <div class="container section-content">
+          <div class="row">
+            <div class="col section-content-header">
+              C++ Class
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span">
+              June 2020 - Present
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-inner">
+              <ul>
+                <li class="main-li">Teacher and Organizer of a C++ Programming Class</p>
+                <li class="main-li">Taught over 30 students</p>
+                <li class="main-li">Raised over $2000 for COVID relief (masks and PPE for senior housing and hospitals)</p>
+                  <li class="main-li">Introduced students to C++ programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <!-- Project 2 -->
         <div class="container section-content">
           <div class="row">
             <div class="col section-content-header">
-              Project 2
+              Technology Empowering Leaders Python Class
             </div>
           </div>
           <div class="row">
             <div class="col time-span">
-              Aug 2019 - Jan 2020
+              Oct 2020 - May 2021
             </div>
           </div>
           <div class="row">
             <div class="col section-content-inner">
-              <p>Here is what I did for this project</p>
-              <p>Here are some action steps I took</p>
               <ul>
-                <li class="main-li">I planned this out</li>
-                <li class="sub-li">Step 1</li>
-                <li class="sub-li">Step 2</li>
-                <li class="main-li">I executed this</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="container section-content">
-          <div class="row">
-            <div class="col section-content-header">
-              Project 3
-            </div>
-          </div>
-          <div class="row">
-            <div class="col time-span">
-              Sept 2018 - June 2019
-            </div>
-          </div>
-          <div class="row">
-            <div class="col section-content-inner">
-              <p>Here is what I did for this project</p>
-              <p>Here are some action steps I took</p>
-              <ul>
-                <li class="main-li">I planned this out</li>
-                <li class="sub-li">Step 1</li>
-                <li class="sub-li">Step 2</li>
-                <li class="main-li">I executed this</li>
+                <li class="main-li">Teacher and Organizer of a Python Programming Class</li>
+                <li class="main-li">Taught 19 students from local Itliong Vera-Cruz Middle School</li>
+                <li class="main-li">Introduced local students to Python programming</li>
               </ul>
             </div>
           </div>
@@ -227,37 +245,65 @@
 
         <!-- Project 1 -->
         <div class="container section-content">
-
           <div class="row">
             <div class="col section-content-header">
-              Award 1
+              Eagle Scout
             </div>
           </div>
           <div class="row">
             <div class="col time-span award-space-bottom">
-              From this org
+              2020
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-header">
+              Gold Presidential Volunteer Award
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span award-space-bottom">
+              2019
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-header">
+              Bronze Presidential Volunteer Award
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span award-space-bottom">
+              2020
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-header">
+              United States Coding Olympiad Silver
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span award-space-bottom">
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col section-content-header">
+              AP Scholar with Honor
+            </div>
+          </div>
+          <div class="row">
+            <div class="col time-span award-space-bottom">
+              2020
             </div>
           </div>
 
           <div class="row">
             <div class="col section-content-header">
-              Certification
+              Superintendent Honor Roll
             </div>
           </div>
           <div class="row">
             <div class="col time-span award-space-bottom">
-              What this certification is about
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col section-content-header">
-              Honor
-            </div>
-          </div>
-          <div class="row">
-            <div class="col time-span award-space-bottom">
-              Here's what I did
+              2018 - Present
             </div>
           </div>
 
@@ -277,8 +323,8 @@
             <img class="overlay-content-image" src="/static/img/interest-1.jpg">
           </div>
           <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">This is a title</h3>
-            <p class="content-text">This is a short description</p>
+            <h3 class="content-title">Typing Speed</h3>
+            <p class="content-text">Using: <a href="https://www.monkeytype.com">MonkeyType</a></p>
           </div>
         </div>
       </div>
@@ -294,8 +340,8 @@
             <img class="overlay-content-image" src="/static/img/interest-2.jpg">
           </div>
           <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">This is a title</h3>
-            <p class="content-text">This is a short description</p>
+            <h3 class="content-title">Boy Scouts</h3>
+            <p class="content-text">Achieved Eagle Rank in 2019</p>
           </div>
         </div>
       </div>
@@ -308,8 +354,8 @@
             <img class="overlay-content-image" src="/static/img/interest-3.jpg">
           </div>
           <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">This is a title</h3>
-            <p class="content-text">This is a short description</p>
+            <h3 class="content-title">Swim Team</h3>
+            <p class="content-text">Varsity Swimmer for James Logan High School</p>
           </div>
         </div>
       </div>
@@ -330,26 +376,31 @@
       <div class="col-sm-6 contact-icons">
         <div>
           <img src="/static/img/contact-icons/gmail.png">
-          <span class="contact-info">me@gmail.com</span>
+          <span class="contact-info"><a href="mailto: daniel17liu@gmail.com" style="color:#2e3440">daniel17liu@gmail.com</a></span>
         </div>
-        <div>
+        <!-- <div>
           <a href="https://www.linkedin.com/">
             <img src="/static/img/contact-icons/linkedin.png">
             <span class="contact-info">linkedin.com/myprofile</span>
           </a>
-        </div>
+        </div> -->
         <div>
           <a href="https://www.instagram.com/">
             <img src="/static/img/contact-icons/insta.jpg">
-            <span class="contact-info">@myhandle</span>
+            <span class="contact-info">@DanL2015</span>
           </a>
         </div>
         <div>
           <a href="https://github.com/">
             <img src="/static/img/contact-icons/github.png">
-            <span class="contact-info">github.com/myprofile</span>
+            <span class="contact-info">github.com/DanL2015</span>
           </a>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="https://www.nordtheme.com/" style="font-family: Roboto, sans-serif; font-size: 22px; line-height: 24px; font-weight: 400; color:#2e3440">Color Pallete</a>
       </div>
     </div>
   </div>

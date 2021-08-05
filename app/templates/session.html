@@ -1,7 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'chatroom-base.html' %}
 
 {% block styles %}
 <link type="text/css" rel="stylesheet" href="/static/css/chat.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 {% endblock %}
 
 {% block scripts %}
@@ -12,14 +15,16 @@
 <div class="container chat-content">
   <div class="row">
     <div class="col">
-      <h1>Set Username</h1>
+      <div style="text-align: center; border: 5px solid #88c0d0; border-radius: 25px;">
+      <h1 style="margin: 10px">Set Username</h1>
 
-      <form class="input-group mb-3" id="username-input">
+      <form class="input-group mb-3" id="username-input" style="margin: 10px">
         <input type="text" class="form-control" placeholder="Your Username">
         <div class="input-group" style="margin-top: 20px;">
           <input type="submit" class="btn btn-outline-secondary" value="Enter Chatroom" />
         </div>
       </form>
+      </div>
     </div>
   </div>
 </div>
